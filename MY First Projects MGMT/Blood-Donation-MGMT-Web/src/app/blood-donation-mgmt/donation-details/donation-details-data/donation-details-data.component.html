@@ -1,0 +1,51 @@
+<!-- <p>donation-details-data works!</p> -->
+<div class="donation-details-container">
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Id
+                </td>
+                <td>
+                    Date
+                </td>
+                <td>
+                    Blood Volume
+                </td>
+                <td>
+                    Type
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Details
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let donation of donations">
+                <td>
+                    {{donation._id}}
+                </td>
+                <td>
+                    {{donation.date}}
+                </td>
+                <td>
+                    {{donation.blood_volume_ml}}
+                </td>
+                <td>
+                    {{donation.type}}
+                </td>
+                <td>
+                    {{donation.blood_donation_details.name}}
+                </td>
+                <td>
+                    <a routerLink="/donation-details/donation-view-details/donationId/{{donation._id}}/donorId/{{donation.blood_donation_details._id}}">
+                        View Details
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,65 @@
+<!-- <p>donation-details works!</p> -->
+
+<div class="donation-details-container">
+
+    <div class="header">
+        <div class="blood-group">
+            <label>
+                Select Blood Groups : 
+            </label>
+            <select [(ngModel)]="group">
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+            </select>
+            <button routerLink="/donation-details/bloodGroups/{{group}}" (click)="onView()">
+                View
+            </button>
+            <br>
+            <label>
+                Select Type Of the Candidate : 
+            </label>
+            <select [(ngModel)]="type">
+                <option value="Donor">Donor</option>
+                <option value="Patient">Patient</option>
+            </select>
+            <button (click)="onFind()" routerLink="/donation-details/donation-details-by-type/bloodGroup/{{group}}/type/{{type}}">
+                Find
+            </button>
+            <br>            
+        </div>
+        <div class="blood-volume">
+            <label>
+                Select Blood Group to calculate Available Blood Volume : 
+            </label>
+            <select [(ngModel)]="action">
+                <option value="Donated">
+                    Donated
+                </option>
+                <option value="Taken">
+                    Taken
+                </option>
+            </select>
+            <button (click)="onCalculate()">
+                Blood Volume
+            </button>
+            <div>
+                <p>Total Volume present in the Bank :  <span>{{volume}}</span> </p>                   
+            </div>
+        </div>
+    </div>
+
+    <div class="show-datas">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+
+
+<!-- <app-donation-details-data></app-donation-details-data> -->

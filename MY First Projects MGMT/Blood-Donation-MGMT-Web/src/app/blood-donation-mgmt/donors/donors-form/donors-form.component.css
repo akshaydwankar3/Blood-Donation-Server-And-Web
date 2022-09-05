@@ -1,0 +1,19 @@
+.form{
+    border: 1px solid white;
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    background-image: url('https://www.oneblood.org/core/fileparse.php/18/urlt/howbloodisneeded.png');
+    background-repeat: no-repeat;
+    background-size: 687px 405px;
+    color: black;
+}
+
+button{
+    margin: 5px;
+}
+
+input{
+    margin: 2px;
+    width: 120px;
+}

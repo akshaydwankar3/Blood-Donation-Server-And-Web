@@ -1,0 +1,13 @@
+table{
+    border: 1px solid white;
+    margin: auto;
+}
+
+td{
+    border: 1px solid aqua;
+    margin: auto;
+}
+
+thead{    
+    font-weight: bold;
+}

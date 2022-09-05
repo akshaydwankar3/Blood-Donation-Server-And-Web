@@ -1,0 +1,48 @@
+.sample{
+    background: red;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.content a{
+    font-size: 20px;
+}
+
+.logo img{
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.slider{
+    width: 850px;
+    height: 500px;
+    background-image: url('https://img.freepik.com/free-vector/set-blood-types-cartoon-character-different-poses_49924-225.jpg?w=740&t=st=1662276494~exp=1662277094~hmac=8a91e8e751ed5dd17ce1fb969be51de55b03fbd041c311f9bc941085ccae7cb9');
+    margin: 150px auto;
+    animation: slide 20s infinite;
+    border-radius: 20px;
+    /* background-repeat: no-repeat; */
+    /* background-size: 800px 400px; */
+}
+
+@keyframes slide{
+    /* 0%{
+        background: url('https://img.freepik.com/free-vector/set-blood-types-cartoon-character-different-poses_49924-225.jpg?w=740&t=st=1662276494~exp=1662277094~hmac=8a91e8e751ed5dd17ce1fb969be51de55b03fbd041c311f9bc941085ccae7cb9');
+    } */
+    25%{
+       background: url('https://img.freepik.com/free-vector/cartoon-blood-donation-background_52683-70800.jpg?w=826&t=st=1662276874~exp=1662277474~hmac=e29c289c55685ac8c6f5a857e3b09b365ff6c857ddab6df47c58a7adc06be727');
+       /* width: 700px;
+       height: 400px; */
+    }
+    50%{
+        background: url('https://img.freepik.com/premium-vector/volunteers-woman-man-donating-blood-blood-donor-charity_262189-61.jpg?w=996');
+    }
+    75%{
+        background: url('https://img.freepik.com/free-vector/blood-donor-nurse_74855-6262.jpg?w=740&t=st=1662277137~exp=1662277737~hmac=fa0d02378df037a1a8d226e075242b5b8ece6b28310c370805a1569a9f600d19');
+    }
+    100%{
+        background: url('https://img.freepik.com/free-vector/blood-transfusion-process-background_1057-965.jpg?w=740&t=st=1662277320~exp=1662277920~hmac=a49ee407335a9e5c5cc7dc0214ebc6327611d054a9d93cc72585a446cede9fc3');
+    }
+}

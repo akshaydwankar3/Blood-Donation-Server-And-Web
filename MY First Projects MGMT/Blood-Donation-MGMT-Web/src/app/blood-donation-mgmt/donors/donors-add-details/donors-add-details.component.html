@@ -1,0 +1,38 @@
+<!-- <p>donors-add-details works!</p>  -->
+
+<div class="donors-add-details-container">
+    <div class="forms">
+        <label>
+            Date :
+        </label>
+        <input type="date" placeholder="Enter Date" [(ngModel)]="date"/>
+        <br>
+        <br>
+        <label>
+            Blood Volume : 
+        </label>
+        <input type="number" placeholder="Enter Blood Volume" [(ngModel)]="blood_volume_ml" />
+        <br>
+        <br>
+        <label>
+            Type : 
+        </label>
+        <select [(ngModel)]="type" >
+            <option value="Donated">
+                Donated
+            </option>
+            <option value="Taken">
+                Taken
+            </option>
+        </select>        
+    </div>   
+    <br>
+    <div class="buttons">
+        <button (click)="onSave()">
+            Submit
+        </button>
+        <button routerLink="/donors/donors-details">
+            Cancel
+        </button>
+    </div>
+</div>

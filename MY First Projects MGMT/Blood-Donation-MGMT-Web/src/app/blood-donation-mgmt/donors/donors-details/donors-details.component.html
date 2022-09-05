@@ -1,0 +1,82 @@
+<!-- <p>donors-details works!</p> -->
+<div class="operation" >
+    <button (click)="onNewDonors()" *ngIf="!visible; else isvisible" routerLink="/donors/donors-registration-form">
+        New Donors
+    </button>
+</div>
+<br>
+<ng-template #isvisible>
+   <router-outlet></router-outlet>
+</ng-template>
+<div class="donors-details-container">
+    <table>
+        <thead>
+            <tr>
+                <td>
+                    Id
+                </td>
+                <td>
+                    Type
+                </td>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Gender
+                </td>
+                <td>
+                    Age
+                </td>
+                <td>
+                    Contacts
+                </td>
+                <td>
+                    Email
+                </td>
+                <td>
+                    City
+                </td>
+                <td>
+                    Blood Group
+                </td>
+                <td>
+                    Details
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let donor of donors">
+                <td>
+                    {{donor._id}}
+                </td>
+                <td>
+                    {{donor.type}}
+                </td>
+                <td>
+                    {{donor.name}}
+                </td>
+                <td>
+                    {{donor.gender}}
+                </td>
+                <td>
+                    {{donor.age}}
+                </td>
+                <td>
+                    {{donor.contacts}}
+                </td>
+                <td>
+                    {{donor.email}}
+                </td>
+                <td>
+                    {{donor.address.city}}
+                </td>
+                <td>
+                    {{donor.blood_group}}
+                </td>
+                <td>
+                    <a routerLink="/donors/donors-add-details/donorsId/{{donor._id}}">Add Details</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

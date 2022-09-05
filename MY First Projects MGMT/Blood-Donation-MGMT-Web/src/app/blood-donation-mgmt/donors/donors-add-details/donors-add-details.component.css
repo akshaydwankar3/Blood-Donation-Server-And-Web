@@ -1,0 +1,15 @@
+.donors-add-details-container{
+    border: 1px solid white;
+    margin: auto;
+    width: 25%;
+    text-align: center;
+    padding: 5px;
+    background-image: url('https://media.istockphoto.com/id/1032496340/vector/donate-blood-concept-with-blood-bag-and-heart-character-blood-donation-vector-illustration.webp?s=612x612&w=is&k=20&c=quFB9wRiDmyUIt1dcjWMPTzOSqz4AntEzGkFyH_LYGo=');
+    background-repeat: no-repeat;
+    background-size: 345px 176px;
+    color: black;
+}
+
+button{
+    margin: 5px;
+}

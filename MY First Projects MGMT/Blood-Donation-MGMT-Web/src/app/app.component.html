@@ -1,0 +1,47 @@
+<div class="conatainer">
+
+  <div class="sample" *ngIf="errorService.error">
+    <!-- <marquee> Lets Move this text.</marquee> -->
+    <marquee 
+          class="error"
+          direction="right" 
+          behavior="alternate" 
+          >
+        Something went wrong! Please try again later 
+    </marquee>
+
+    
+    <!-- <app-name-generator>
+      
+    </app-name-generator> -->
+  </div>
+
+  <div class="header">
+    <div class="logo">
+      <img src="https://previews.123rf.com/images/chudtsankov/chudtsankov1902/chudtsankov190200003/118643778-red-blood-drop-cartoon-character-waving-for-greeting-vector-illustration-isolated-on-transparent-bac.jpg?fj=1" alt="">
+    </div>
+    <div class="title">
+      <h1>
+        <b>
+          <i>
+            BLOOD DONATION CAMP
+          </i>
+        </b>
+      </h1>
+    </div>
+  </div>
+  <div class="menu">
+   
+  </div>
+  <div class="content">
+      <a routerLink="/donors/donors-details">Donors</a> 
+      |
+      <a routerLink="/donation-details/donation-details-data">Donation Details</a>      
+  </div>
+  <div class="content-data">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="slider">
+     
+  </div>
+</div>
